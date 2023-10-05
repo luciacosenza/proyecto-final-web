@@ -1,0 +1,689 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap');
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url();
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url("../fonts/Didot_LT_Std_Italic.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url("../fonts/Didot_Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+}
+
+.texto-resaltado{
+    font-family: 'didot';
+    font-size: 48px;
+    font-style: italic;
+}
+
+.subtitulo{
+    font-size: 2.5rem;
+    padding: 20px;
+    font-weight: 300;
+    font-family: 'Roboto';
+}
+
+/* HEADER */
+
+header{
+    background-color: rgba(0, 0, 0, 0.386);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.339);
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 30px;
+}
+.navbar li{
+    list-style: none;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+
+.navbar li a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+}
+.pagina-actual{
+    color: #072042; 
+}
+.pagina-secundaria{
+    color: #e6e5e2;
+}
+.logo-header{
+    text-align: center;
+}
+
+.logo-header img{
+    padding: 0.625rem;
+    height: 4.375rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* PAGINA PRINCIPAL */
+.banner-inicio{
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://images.unsplash.com/photo-1549906145-41def6343691?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80");
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:100vh;
+    box-shadow: 2px 2px 5px gray;
+    
+}
+.banner-inicio .img-banner img{
+    width: 100%;
+}
+
+.banner-inicio button{
+    align-self: center;
+    margin-top: 70px;
+    font-size: 20px;
+    color: #e6e5e2;
+    background-color: rgba(255, 255, 255, 0.277);
+    width: 9.375rem;
+    padding: 1.25rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px rgba(47, 46, 46, 0.222);
+}
+
+.banner-inicio button a{
+    text-decoration: none;
+    color: #e6e5e2;
+}
+.banner-inicio .titulo-banner{
+    padding-top:400px ;
+}
+.banner-inicio .titulo-banner h1{
+    padding-left: 60px;
+    color:#e6e5e2;
+    font-family: Arial light, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    border-bottom: 1px solid #e6e5e2;
+}
+
+.banner-inicio  p{
+    padding-left: 60px;
+    color: #e6e5e2;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.quienes-somos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: #e6e5e2;
+
+}
+.quienes-somos img{
+    max-width: 40%;
+    height: auto;
+    margin-right: 70px;
+}
+
+.quienes-somos div{
+    color: #072042;
+    font-family: 'Roboto';
+    margin-left: 70px;
+}
+
+
+.quienes-somos div h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+
+}
+
+.quienes-somos div p{
+    padding: 25px;
+    padding-right: 100px;
+}
+
+
+.nuestros-servicios{
+    background-color: hsl(46, 39%, 85%);
+    width: 100%;
+    padding: 20px;
+
+}
+
+.nuestros-servicios .subtitulo{
+    margin-left: 50px;
+    padding: 30px;
+}
+.servicios{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    text-align: center;
+
+    gap: 30px;
+}
+
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    margin: 10px; 
+    padding: 10px;
+}
+
+.servicios .servicio .container-icon-servicio{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #072042;
+}
+
+.servicios .servicio .container-icon-servicio img{
+    padding: 35px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.servicios .servicio h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: #242223;
+}
+.servicios .servicio p{
+    padding: 20px;
+    color: #242223;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "logo-redes newsletter menu-footer"
+    "copyright copyright copyright";
+    width: 100%;
+    height: 300px;
+    background-color: #242223;
+    border-top: 1px solid #bebdb7;
+}
+
+.logo-redes{
+    grid-area: logo-redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-footer{
+    margin-left: 50px;
+}
+.logo-footer p{
+    font-family: 'Roboto';
+    color: #BBBABA;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.logo-footer img{
+    width: 100px;
+}
+.redes-footer{
+    align-self: flex-start;
+    margin-left: 45px;
+}
+
+.redes-footer img{
+    width: 30px;
+    margin:10px;
+}
+.newsletter{
+    grid-area: newsletter;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.newsletter h3{
+    display: inline;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #e6e5e2;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.newsletter form input{
+    border-radius: 50px;
+    width: 400px;
+    height: 40px;
+}
+.newsletter form button{
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+.menu-footer{
+    grid-area: menu-footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    color: #e6e5e2;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.menu-footer h4{
+    font-family: 'Roboto';
+    font-weight: 400;
+    padding: 15px;
+}
+
+.menu-footer ul li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-footer ul li a{
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #e6e5e2;
+}
+
+.copyright{
+    grid-area: copyright;
+    text-align: center;
+    color: #e6e5e2c6;
+    font-family: 'Roboto';
+}
+
+.copyright p{
+    font-size: 16px;
+}
+/* SECCION LA EMPRESA */
+
+.banner-empresa{
+    background-image: url("../assets/banner-empresa.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:100vh;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.banner-empresa h1{
+    padding-top: 500px;
+    font-family: 'Roboto';
+    padding-left: 60px;
+    color:#e6e5e2;
+    font-size: 4.875rem;
+    font-weight:300;
+    border-bottom: 1px solid #e6e5e2;
+}
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    background-color: #242223;
+    color: #e6e5e2;
+}
+
+.historia h2{
+    margin-top: 50px;
+    padding-left: 60px;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    font-weight:300;
+}
+
+.anio-descripcion h3{
+    font-family: 'Didot';
+    font-style: italic;
+    font-size: 3.75rem;
+    font-weight: 300;
+}
+
+.anio-descripcion ul li{
+    list-style: none;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.contenido-izquierda .anio-descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.contenido-izquierda p{
+    padding-left: 30%;
+}
+
+.contenido-derecha .anio-descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.contenido-izquierda{
+display: flex;
+width: 100%;
+height: 342px;
+flex-direction: column;
+}
+.contenido-derecha{
+    display: flex;
+width: 100%;
+height: 342px;
+flex-direction: column;
+}
+
+
+.mision-vision-objetivos{
+    background-color: #e6e5e2;
+    color: #242223;
+}
+
+.equipo{
+    background-color: #242223;
+    color: #E6E5E2;
+}
+
+.equipo .miembro{
+    border-left: 1px solid #E6E5E2;
+}
+.equipo .miembro h4{
+    font-family: 'Roboto';
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+.equipo .miembro p{
+    color: #FFF;
+font-family: 'Roboto';
+font-size: 1.5rem;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+}
+
+
+/* SECCION SGR */
+
+.banner-sgr{
+    background-image: url("../assets/banner-sgr.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 500px;
+    box-shadow: 2px 2px 5px gray;
+    padding: 5%;
+}
+
+.banner-sgr h2{
+    padding-top: 100px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.banner-sgr h1{
+    font-family: 'Didot';
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.requisitos{
+    background-color: #242223;
+    color: #E6E5E2;
+    padding: 5%;
+}
+.requisitos img{
+    width: 30%;
+}
+
+.requisitos ul{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+.requisitos ul li{
+    list-style: circle;
+    margin-left: 40px;
+}
+
+.como-asociarse{
+    background-color: #E6E5E2;
+    color: #242223;
+    padding: 5%;
+}
+
+.tipo-de-persona{
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    font-weight:400;
+}
+.info-asociacion{
+    border-left: 1px solid #242223;
+    margin-left: 50px;
+}
+
+.titulo-paso-asociacion{
+    border-bottom: 1px solid #242223
+}
+
+.paso-asociacion div h4{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.paso-asociacion div ul{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.info-asociacion p{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.info-asociacion li{
+    list-style:disc;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.info-asociacion h4{
+    margin-left: 30px;
+}
+
+
+
+/* SECCION ASOCIARSE */
+.banner-asociarse{
+    background-image: url("../assets/banner-asociarse.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.form-asociacion{
+    padding-top: 150px ;
+    width: 90%;
+    height:90%;
+}
+
+.form-asociacion form{
+    padding: 20px;
+    background-color: #E6E5E2;
+    box-shadow: 3px 0 70px gray;
+    width: 100%;
+    height: 100%;
+}
+
+.campo-form input{
+    border-radius: 50px;
+    font-family: 'Roboto';
+}
+
+.form-asociacion form input{
+    width: 30%;
+    height: 40px;
+    border-width: 0.5px;
+    border-color: #bebdb7;
+}
+.boton-enviar{
+    background-color: #242223;
+    font-family: 'Roboto';
+    color: #E6E5E2;
+    border-radius: 10px;
+}
+
+.doc-utiles{
+    background-color: #242223;
+    color: #E6E5E2;
+    width: 100%;
+    height: 400px;
+}
+.doc-utiles ul li{
+    list-style:disc;
+    margin-left: 50px;
+
+}
+.doc-utiles ul li a{
+    font-family: 'Helvetica';
+    text-decoration: none;
+    color: #E6E5E2;
+}
+
+/* form contacto */
+.banner-contacto{
+    background-image: url("../assets/banner-contacto.jpg");
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    
+}
+.banner-contacto p{
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.banner-contacto h1{
+    border-bottom:1px solid #242223;
+}
+
+.titulo-contacto{
+    padding-top:500px
+}
+
+.form-contacto{
+    background-color: #E6E5E2;
+    width: 40%;
+    height: 300px;
+}
+
+.form-contacto form{
+    box-shadow: 3px 0 70px gray;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.form-contacto form input{
+    width: 30%;
+    height: 40px;
+    border-width: 0.5px;
+    border-color: #bebdb7;
+}
+
+.ubicacion{
+    background-color: #E6E5E2;
+    color: #242223;
+}
+
+.card-contacto{
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 15px;
+
+}
+.card-contacto img{
+    width: 40px;
+}
+
+.redes-sociales{
+    background-color: #242223;
+}
+
+.redes-sociales a img{
+    width: 150px;
+}

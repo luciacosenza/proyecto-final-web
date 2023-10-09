@@ -33,7 +33,7 @@ p{
 }
 
 .texto-resaltado{
-    font-family: 'didot';
+    font-family: 'Didot';
     font-size: 48px;
     font-style: italic;
 }
@@ -41,14 +41,14 @@ p{
 .subtitulo{
     font-size: 2.5rem;
     padding: 20px;
-    font-weight: 300;
+    font-weight:300;
     font-family: 'Roboto';
 }
 
 /* HEADER */
 
 header{
-    background-color: rgba(0, 0, 0, 0.386);
+    background-color: rgba(131, 122, 122, 0.386);
     position: absolute;
     top: 0px;
     width: 100%;
@@ -301,15 +301,31 @@ footer{
     margin-bottom: 20px;
 }
 
+.newsletter form{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
 .newsletter form input{
     border-radius: 50px;
     width: 400px;
-    height: 40px;
+    height: 50px;
 }
 .newsletter form button{
+    background-color: #242223;
+    color: #E6E5E2;
+    position: absolute;
     border-radius: 50px;
     width: 40px;
     height: 40px;
+    margin-right: 5px;
+}
+
+#email::placeholder{
+    color: #242223;
+    padding-left: 5%;
+    font-family: 'Roboto';
 }
 .menu-footer{
     grid-area: menu-footer;
@@ -371,7 +387,7 @@ footer{
     font-weight:300;
     border-bottom: 1px solid #e6e5e2;
 }
-
+/* seccion nuestra historia */
 .historia{
     display: flex;
     flex-direction: column;
@@ -390,8 +406,9 @@ footer{
 .anio-descripcion h3{
     font-family: 'Didot';
     font-style: italic;
-    font-size: 3.75rem;
+    font-size: 4.5rem;
     font-weight: 300;
+    width: 15%;
 }
 
 .anio-descripcion ul li{
@@ -399,50 +416,136 @@ footer{
     font-family: 'Roboto';
     font-size: 1.5rem;
     font-weight: 300;
+    border-bottom: solid 1px #e6e5e2;
+}
+.anio-descripcion ul {
+    width: 85%;
 }
 
+.contenido-izquierda .anio-descripcion h3{
+    text-align: left;
+    margin-left: 40px;
+}
+
+.contenido-derecha .anio-descripcion h3{
+    text-align: right;
+    margin-right: 40px;
+}
+
+
+.contenido-izquierda .anio-descripcion ul li{
+    text-align: left;
+    margin-right: 5%;
+}
+.contenido-derecha .anio-descripcion ul li{
+    text-align: right;
+    margin-left: 5%;
+}
 .contenido-izquierda .anio-descripcion{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: start;
 }
-
-.contenido-izquierda p{
-    padding-left: 30%;
-}
-
 .contenido-derecha .anio-descripcion{
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: start;
+
 }
+
+.contenido-derecha p{
+    padding-left: 30%;
+    padding-right: 5%;
+    padding-top: 50px;
+    font-size:  1.5rem;
+}
+
+.contenido-izquierda p{
+    padding-top: 50px;
+    padding-left: 5%;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+
 .contenido-izquierda{
-display: flex;
-width: 100%;
-height: 342px;
-flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 342px;
+    flex-direction: column;
 }
 .contenido-derecha{
     display: flex;
-width: 100%;
-height: 342px;
-flex-direction: column;
+    width: 100%;
+    height: 342px;
+    flex-direction: column;
 }
 
+/* seccion mision */
 
 .mision-vision-objetivos{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
     background-color: #e6e5e2;
-    color: #242223;
+    color: #072042;
+    padding: 5%;
 }
 
+.info-empresa{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    gap: 50px;   
+}
+
+.info-empresa h3{
+    width: 30%;
+}
+
+.info-empresa p{
+    width: 70%;
+    padding-left: 10%;
+    line-height: 30px;
+    border-left: solid 1.5px #072042;
+}
+/* seccion equipo */
 .equipo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: #242223;
     color: #E6E5E2;
 }
+.titulo-equipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    align-self: flex-start;
+    margin-top:  5%;
 
+}
+
+.miembros{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
 .equipo .miembro{
+    margin-top:35px;
+    margin-bottom: 35px;
+    padding-left: 30px;
     border-left: 1px solid #E6E5E2;
 }
 .equipo .miembro h4{
@@ -464,6 +567,8 @@ line-height: normal;
 /* SECCION SGR */
 
 .banner-sgr{
+    display: flex;
+    flex-direction: row;
     background-image: url("../assets/banner-sgr.jpg");
     background-size: cover;
     background-position:center;
@@ -472,30 +577,51 @@ line-height: normal;
     box-shadow: 2px 2px 5px gray;
     padding: 5%;
 }
+.titulo-sgr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-right: 10%;
+}
 
-.banner-sgr h2{
+.banner-sgr h1{
     padding-top: 100px;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 4rem;
+    text-align: center;
 }
 
-.banner-sgr h1{
+.banner-sgr span{
     font-family: 'Didot';
     font-style: italic;
     font-size: 4rem;
+} 
+
+.banner-sgr p{
+    width: 50%;
+    align-self: center;
+    justify-self: start;
+    padding-top: 7%;
+    line-height: 40px;
 }
 
 .requisitos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
     background-color: #242223;
     color: #E6E5E2;
     padding: 5%;
 }
-.requisitos img{
-    width: 30%;
-}
 
 .requisitos ul{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     font-family: 'Roboto';
     font-size: 1.5rem;
 }
@@ -504,7 +630,20 @@ line-height: normal;
     list-style: circle;
     margin-left: 40px;
 }
+.titulo-requisitos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: start;
+}
+.titulo-requisitos img{
+    width: 300px;
+}
 
+.titulo-requisitos .texto-resaltado{
+    width: 30px;
+}
 .como-asociarse{
     background-color: #E6E5E2;
     color: #242223;

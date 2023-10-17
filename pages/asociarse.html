@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    
 </head>
+
 <body>
     <header>
         <div class="logo-header">
@@ -27,47 +29,51 @@
             <div class="form-asociacion">
                 <form>
                     <h2 class="subtitulo">Asociarse</h2>
-                    <label for="nombre" class="campo-form">
+                    <label for="nombre" class="campo-form campo-nombre">
                         <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                     </label>
-                    <label for="cuil" class="campo-form">
-                        <input type="text" id="cuil" name="cuil" placeholder="Cuil" required>
+                    <label for="cuit" class="campo-form campo-cuit">
+                        <input type="text" id="cuit" name="cuit" placeholder="Cuil" required>
                     </label>
-                    <label for="telefono" class="campo-form">
+                    <label for="telefono" class="campo-form campo-telefono">
                         <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required>
                     </label>
 
-                    <label for="email" class="campo-form">
+                    <label for="email" class="campo-form campo-email">
                         <input type="email" id="email" name="email" placeholder="E-mail" required>
                     </label>
 
-                    <label for="archivos">
-                        <input type="file" id="archivos" name="archivos[]" multiple accept=".pdf, .jpg, .png">
+                    <label for="archivo1" class="campo-archivo1">
+                        <i class="far fa-file fa-lg"></i>
+                        <input type="file" id="archivo1" name="archivos[]" multiple accept=".pdf, .jpg, .png">
                     </label>
 
-                    <label for="archivos">
-                        <input type="file" id="archivos" name="archivos[]" multiple accept=".pdf, .jpg, .png">
+                    <label for="archivo2" class="campo-archivo2">
+                        <i class="far fa-file fa-lg"></i>
+                        <input type="file" id="archivo2" name="archivos[]" multiple accept=".pdf, .jpg, .png">
                     </label>
 
-                    <label for="archivos">
-                        <input type="file" id="archivos" name="archivos[]" multiple accept=".pdf, .jpg, .png">
+                    <label for="archivo3" class="campo-archivo3">
+                        <i class="far fa-file fa-lg"></i>
+                        <input type="file" id="archivo3" name="archivos[]" multiple accept=".pdf, .jpg, .png">
                     </label>
 
-                    <label for="archivos">
-                        <input type="file" id="archivos" name="archivos[]" multiple accept=".pdf, .jpg, .png">
+                    <label for="archivo4" class="campo-archivo4">
+                        <i class="far fa-file fa-lg"></i>
+                        <input type="file" id="archivo4" name="archivos[]" multiple accept=".pdf, .jpg, .png">
                     </label>
-                    
-                    <input class="boton-enviar" type="submit" value="Enviar">
+
+                    <button class="boton-enviar" type="submit" value="Enviar">Enviar</button>
                 </form>
             </div>
         </section>
 
         <section class="doc-utiles">
-            <h2 class="subtitulo">Documentos útiles: </h2><h2 class="texto-resaltado">descarga</h2>
+            <h2 class="subtitulo">Documentos útiles: <span class="texto-resaltado">descarga</span></h2>
             <ul>
-                <li><a href="">Documento</a></li>
-                <li><a href="">Documento</a></li>
-                <li><a href="">Documento</a></li>
+                <li><a href="">Campo Aval S.G.R. - FORMULARIO DE ESTADO DE SITUACIÓN PATRIMONIAL</a></li>
+                <li></i><a href="">Campo Aval S.G.R. - FORMULARIO COMERCIAL</a></li>
+                <li><a href="">Campo Aval S.G.R. - FORMULARIO AGROPECUARIO</a></li>
             </ul>
         </section>
 

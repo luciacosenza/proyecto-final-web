@@ -3,11 +3,6 @@
 
 
 @font-face {
-    font-family: 'Roboto';
-    src: url();
-}
-
-@font-face {
     font-family: 'Didot';
     src: url("../fonts/Didot_LT_Std_Italic.otf");
     font-weight: normal;
@@ -34,7 +29,7 @@ p{
 
 .texto-resaltado{
     font-family: 'Didot';
-    font-size: 48px;
+    font-size: 3rem;
     font-style: italic;
 }
 
@@ -127,8 +122,13 @@ header{
     text-decoration: none;
     color: #e6e5e2;
 }
+
+.banner-inicio button:hover{
+    background-color: #24222342;
+    cursor: pointer;
+}
 .banner-inicio .titulo-banner{
-    padding-top:400px ;
+    padding-top:30%;
 }
 .banner-inicio .titulo-banner h1{
     padding-left: 60px;
@@ -196,7 +196,6 @@ header{
     flex-direction: row;
     align-items:baseline;
     text-align: center;
-
     gap: 30px;
 }
 
@@ -323,7 +322,7 @@ footer{
 }
 
 #email::placeholder{
-    color: #242223;
+    color: #5c5b5bbd;
     padding-left: 5%;
     font-family: 'Roboto';
 }
@@ -516,7 +515,7 @@ footer{
 /* seccion equipo */
 .equipo{
     width: 100%;
-    height: 100vh;
+    height: 800px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -536,31 +535,32 @@ footer{
 }
 
 .miembros{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom:5%;
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 .equipo .miembro{
-    margin-top:35px;
-    margin-bottom: 35px;
-    padding-left: 30px;
+    margin-top:3%;
+    margin-bottom: 5%;
+    padding-left: 5%;
     border-left: 1px solid #E6E5E2;
 }
 .equipo .miembro h4{
     font-family: 'Roboto';
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .equipo .miembro p{
     color: #FFF;
-font-family: 'Roboto';
-font-size: 1.5rem;
-font-style: italic;
-font-weight: 300;
-line-height: normal;
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 10px;
 }
 
 
@@ -608,7 +608,7 @@ line-height: normal;
     line-height: 40px;
 }
 
-.requisitos{
+#requisitos{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -618,80 +618,174 @@ line-height: normal;
     padding: 5%;
 }
 
-.requisitos ul{
+#requisitos ul{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20%;
+    width: 60%;
     font-family: 'Roboto';
     font-size: 1.5rem;
 }
 
-.requisitos ul li{
-    list-style: circle;
-    margin-left: 40px;
+#requisitos ul li{
+    list-style:disc;
+    margin-left:15%;
 }
 .titulo-requisitos{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    text-align: start;
+    justify-content: center;
+    align-items: center;
 }
 .titulo-requisitos img{
-    width: 300px;
+    width: 400px;
+    height: 200px;
+    filter: grayscale(2);
+    align-self: center;
+}
+.titulo-requisitos h2{
+    font-size: 3.375rem;
+    width: 400px;
+    padding: 0;
+    padding-bottom: 20px;
 }
 
-.titulo-requisitos .texto-resaltado{
-    width: 30px;
-}
-.como-asociarse{
+
+#como-asociarse{
     background-color: #E6E5E2;
-    color: #242223;
-    padding: 5%;
+    color:#072042;
+    padding: 3%;
 }
 
-.tipo-de-persona{
-    font-family: 'Roboto';
-    font-size: 1.25rem;
-    font-weight:400;
-}
-.info-asociacion{
-    border-left: 1px solid #242223;
-    margin-left: 50px;
+#como-asociarse h2{
+    font-size: 3.375rem;
 }
 
-.titulo-paso-asociacion{
-    border-bottom: 1px solid #242223
+.paso-asociacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 15% 65%;
+    grid-template-areas:    "titulo titulo titulo"
+                            "persona persona persona"
+                            "info info img";
+    width: 100%;
 }
 
-.paso-asociacion div h4{
+.paso-asociacion h3{
+    grid-area: titulo;
+    border-bottom:1px solid #072042;
+}
+
+.tipo-persona{
+    grid-area: persona;
     font-family: 'Roboto';
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.paso-asociacion div ul{
-    font-family: 'Roboto';
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-left: 30px;
+.tipo-persona a{
+    margin-right: 3%;
+    text-decoration: underline;
+    color: #072042;
 }
 
-.info-asociacion p{
-    font-family: 'Roboto';
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-left: 30px;
+.tipo-persona a:hover{
+    color: darkslateblue;
 }
-.info-asociacion li{
+
+.info-asociacion1{
+    padding: 2%;
+    border-left: 1px solid #242223;
+    margin-left: 50px;
+}
+
+
+.info-asociacion2{
+    padding: 2%;
+    border-left: 1px solid #242223;
+    margin-left: 50px;
+}
+
+.info-asociacion1 h4{
+    margin-left: 30px;
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.info-asociacion2 h4{
+    margin-left: 30px;
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.paso-asociacion img{
+    grid-area: img;
+    width:300px;
+    justify-self: end;
+}
+
+.paso-asociacion img:hover{
+    box-shadow: 2px 2px 40px 2px rgba(128, 128, 128, 0.339);
+    transform: scale(1.1);
+}
+
+.paso-asociacion div ul{
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 30px;
+
+}
+
+.container-info-asociacion{
+    width: 50%;
+    grid-area: info;
+}
+
+.tipo-persona{
+    padding-top: 1%;
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    font-weight:400;
+}
+
+
+.info-asociacion1 p{
+    padding-top: 2%;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.info-asociacion2 p{
+    padding-right: 5%;
+    padding-top: 2%;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.info-asociacion1 li{
     list-style:disc;
     padding: 10px;
     margin-left: 10px;
 }
 
-.info-asociacion h4{
-    margin-left: 30px;
+.info-asociacion2 li{
+    list-style:disc;
+    padding: 10px;
+    margin-left: 10px;
 }
+
 
 
 
@@ -699,6 +793,7 @@ line-height: normal;
 .banner-asociarse{
     background-image: url("../assets/banner-asociarse.jpeg");
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 700px;
     display: flex;
@@ -711,58 +806,186 @@ line-height: normal;
     padding-top: 150px ;
     width: 90%;
     height:90%;
+    
 }
 
 .form-asociacion form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:    "titulo-form titulo-form"
+                            "campo-nombre campo-cuit"
+                            "campo-email campo-telefono"
+                            "campo-archivo1 campo-archivo2"
+                            "campo-archivo3 campo-archivo4"
+                            "boton-enviar boton-enviar";
+    width: 100%;
     padding: 20px;
     background-color: #E6E5E2;
     box-shadow: 3px 0 70px gray;
     width: 100%;
     height: 100%;
 }
+.form-asociacion form h2{
+    grid-area: titulo-form;
+}
 
+.campo-nombre{
+    grid-area: campo-nombre;
+}
+
+.campo-cuit{
+    grid-area: campo-cuit;
+}
+
+.campo-telefono{
+    grid-area: campo-telefono;
+}
+
+.campo-email{
+    grid-area: campo-email;
+}
+
+.campo-archivo1{
+    grid-area: campo-archivo1;
+    align-self: center;
+    justify-self: center;
+}
+
+.campo-archivo2{
+    grid-area: campo-archivo2;
+    align-self: center;
+    justify-self: center;
+}
+
+.campo-archivo3{
+    grid-area: campo-archivo3;
+    align-self: center;
+    justify-self: center;
+}
+
+.campo-archivo4{
+    grid-area: campo-archivo4;
+    align-self: center;
+    justify-self: center;
+}
+
+.campo-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .campo-form input{
-    border-radius: 50px;
+    font-family: 'Roboto';
+    width: 80%;
+    height: 40px;
+    border-width: 0.5px;
+    border-color: #bebdb72b;
+    border-radius: 10px;
+    background: linear-gradient(313deg, rgba(255, 255, 255, 0.30) 4.49%, rgba(230, 229, 226, 0.30) 95.45%), #e6e5e2;
+    box-shadow: 3px 3px 10px 0px rgba(138, 155, 189, 0.40) inset, -3px -3px 10px 0px rgba(255, 255, 255, 0.70) inset;
+}
+
+input[type="file"]::file-selector-button{
+    font-family: 'Roboto';
+    border-width: 0.5px;
+    border-color: #bebdb72b;
+    border-radius: 60px;
+    height: 30px;
+    background: linear-gradient(313deg, rgba(255, 255, 255, 0.30) 4.49%, rgba(230, 229, 226, 0.30) 95.45%), #e6e5e2;
+    box-shadow: -3px -3px 10px 0px rgba(255, 255, 255, 0.70) inset, 3px 3px 10px 0px rgba(138, 155, 189, 0.40) inset;
+}
+
+input[type="file"]::file-selector-button:hover{
+    font-family: 'Roboto';
+    border-width: 0.5px;
+    border-color: #bebdb72b;
+    border-radius: 60px;
+    height: 30px;
+    background: linear-gradient(313deg, rgba(255, 255, 255, 0.30) 4.49%, rgba(230, 229, 226, 0.30) 95.45%), #3d3d3d63;
+    box-shadow: -3px -3px 10px 0px rgba(255, 255, 255, 0.70) inset, 3px 3px 10px 0px rgba(138, 155, 189, 0.40) inset;
+}
+
+input::placeholder{
+    color: #5c5b5bbd;
+    padding-left: 5%;
     font-family: 'Roboto';
 }
 
-.form-asociacion form input{
-    width: 30%;
-    height: 40px;
-    border-width: 0.5px;
-    border-color: #bebdb7;
-}
 .boton-enviar{
+    grid-area: boton-enviar;
+    align-self: center;
+    justify-self: center;
+    width:150px;
+    height: 50px;
     background-color: #242223;
     font-family: 'Roboto';
     color: #E6E5E2;
     border-radius: 10px;
+    transition: 1s;
+}
+
+.boton-enviar:hover{
+    background-color: #0b3268 ;
 }
 
 .doc-utiles{
+    display: flex;
+    flex-direction: row;
     background-color: #242223;
     color: #E6E5E2;
     width: 100%;
     height: 400px;
 }
-.doc-utiles ul li{
-    list-style:disc;
-    margin-left: 50px;
 
+.doc-utiles h2{
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    padding-left: 5%;
+}
+
+.doc-utiles ul{
+    width: 50%;
+    list-style-type: disc;
+    margin-left: 50px;
+    align-self: center;
+    justify-content: center
+}
+
+.doc-utiles ul li{
+    padding: 30px;
+    width: 100%;
+    
+}
+
+.doc-utiles ul li a:hover{
+    color: #385d91;
 }
 .doc-utiles ul li a{
     font-family: 'Helvetica';
     text-decoration: none;
     color: #E6E5E2;
+    text-align: left;
+    text-size-adjust: 30px;
 }
 
 /* form contacto */
+
 .banner-contacto{
     background-image: url("../assets/banner-contacto.jpg");
     width: 100%;
-    height: 700px;
+    height: 400px;
     background-size: cover;
     
+}
+
+.titulo-contacto{
+    padding-left: 5%;
+    padding-top:200px;
+    font-family: 'Roboto';
+    color: #e6e5e2;
+    border-bottom:1px solid #e6e5e2;
 }
 .banner-contacto p{
     font-family: 'Roboto';
@@ -771,42 +994,83 @@ line-height: normal;
     padding-left: 20px;
 }
 
-.banner-contacto h1{
-    border-bottom:1px solid #242223;
-}
-
-.titulo-contacto{
-    padding-top:500px
-}
 
 .form-contacto{
+    position: absolute;
+    top: 25%;
+    left: 50%;
     background-color: #E6E5E2;
     width: 40%;
-    height: 300px;
+    height:700px;
+    border-radius: 2%;
+    box-shadow: 3px 0 70px gray;
 }
 
 .form-contacto form{
-    box-shadow: 3px 0 70px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
-    
 }
 
-.form-contacto form input{
-    width: 30%;
-    height: 40px;
-    border-width: 0.5px;
-    border-color: #bebdb7;
+
+.form-contacto .campo-form{
+    padding-top: 40px;
+    width: 100%;
+}
+
+.form-contacto form input::placeholder{
+    margin-left: 40px;
+}
+
+.campo-form .mensaje{
+    height: 200px;
+}
+
+.form-contacto .boton-enviar{
+    margin-top: 7%;
 }
 
 .ubicacion{
+    padding-top: 3%;
+    width: 100%;
+    height: 700px;
     background-color: #E6E5E2;
     color: #242223;
 }
 
+.ubicacion .subtitulo{
+    padding-left: 5%;
+}
+
+
+
+.ubicacion iframe{
+    padding-top: 30px;
+    padding-left: 5%;
+    width: 40%;
+    height: 350px;
+}
+
+.card-contacto-container{
+    position: absolute;
+    top: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    gap: 10%;
+}
 .card-contacto{
-    width: 30%;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:    "titulo-card titulo-card"
+                            "icon-card info-card ";
+    width: 25%;
+    height: 150px;
     padding: 20px;
     background-color: #ffffff;
     font-family: 'Roboto';
@@ -815,14 +1079,88 @@ line-height: normal;
     border-radius: 15px;
 
 }
-.card-contacto img{
-    width: 40px;
+
+.material-icons{
+    grid-area: icon-card;
+    font-size: 3rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-contacto h6{
+    grid-area: titulo-card;
+    align-self: baseline;
+    justify-self: center;
+}
+
+.card-contacto ul{
+    grid-area: info-card;
+    align-self: center;
+    text-decoration: none;
+}
+
+.card-contacto ul li{
+    list-style: none;
+    text-decoration: none;
 }
 
 .redes-sociales{
     background-color: #242223;
+    color: #e6e5e2;
+    height: 500px;
+}
+
+.redes-sociales h2{
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-bottom: 5%;
 }
 
 .redes-sociales a img{
     width: 150px;
+    filter: drop-shadow(10px 10px 70px rgba(138, 155, 189, 0.40));
+    transition: 1s;
 }
+
+.redes-sociales a img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 70px rgb(52, 22, 184));
+}
+
+.container-redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-inicio{
+        height: 416px;
+    }
+    .banner-inicio button{
+        font-size: 0.875rem;
+    }
+    .banner-inicio .titulo-banner h1 {
+        font-size: 2rem; 
+    }
+    .banner-inicio p {
+        font-size: 1.5rem; 
+    }
+    .quienes-somos{
+        height: 400px;
+    }
+    .quienes-somos img{
+        width: 50%;
+    }
+    .servicio {
+        width: 30%; 
+    }
+    .servicios .servicio h3 {
+        font-size: 1.25rem; 
+    }
+    .servicios .servicio p {
+        font-size: 1rem;
+    }
+}
+

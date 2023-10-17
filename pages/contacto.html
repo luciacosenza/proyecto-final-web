@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="../css/style.css">
-    
 </head>
 <body>
     <header>
@@ -25,75 +26,80 @@
 
     <main>
         <section class="banner-contacto">
-            <div class="titulo-contacto"><p>Contacto<p>
+            <div class="titulo-contacto">
+                <p>Contacto<p>
                 <h1 class="subtitulo">Envianos un mensaje</h1>
             </div> 
         </section>
 
         <div class="form-contacto">
             <form>
-                <label class="campo-form"   for="Nombre:">
-                    <input type="text" class="campo-form" name="direccion" placeholder="Nombre">
+                <label class="campo-form"   for="nombre">
+                    <input type="text" name="direccion" placeholder="Nombre">
                 </label>
-                <label class="campo-form"   for="Apellido">
-                    <input type="text" class="campo-form" name="Apellido" placeholder="Apellido">
+                <label class="campo-form"   for="apellido">
+                    <input type="text"  name="Apellido" placeholder="Apellido">
                 </label>
-                <label class="campo-form"   for="Telefono">
-                    <input type="number" class="campo-form" name="Telefono" placeholder="Telefono">
+                <label class="campo-form"   for="telefono">
+                    <input type="number" name="Telefono" placeholder="Telefono">
                 </label>
-                <label class="campo-form"   for="E-mail">
-                    <input type="email" class="campo-form" name="Correo" placeholder="E-mail">
+                <label class="campo-form"   for="email">
+                    <input type="email" name="Correo" placeholder="E-mail">
                 </label>
-                <label class="campo-form"   for="Mensaje">
-                    <input type="text" class="campo-form" name="Mensaje" placeholder="Mensaje">
+                <label class="campo-form"   for="mensaje">
+                    <input class="mensaje" type="text"  name="Mensaje" placeholder="Mensaje">
                 </label>
-                <label class="campo-form"   for="Enviar">
-                    <input type="submit" class="boton-enviar" name="Enviar">
-                </label>
+        
+                <button type="submit" class="boton-enviar">Enviar</button>
+                
         </form>
-
         </div>
 
         <section class="ubicacion">
             <h3 class="subtitulo">Nuestra ubicación</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.98250387364!2d-58.40981752433927!3d-34.579309256209356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57b5d2cdb39%3A0x28ad925f14664a63!2sJer%C3%B3nimo%20Salguero%202835%202%20a%2C%20C1425DEM%20CABA!5e0!3m2!1ses!2sar!4v1695745508946!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="card-contacto-container">
             <div class="card-contacto">
-                <img src="../assets/email.png" alt="icon email">
+                <i class="material-icons">email</i>
                 <h6>Email</h6>
                 <ul>
-                    <li><a href="">email1@gmail.com</a></li>
-                    <li><a href="">email2@gmail.com</a></li>
+                    <li>info@campoaval.com</li>
                 </ul>
             </div>
 
+            
             <div class="card-contacto">
-                <img src="../assets/telefono-movil.png" alt="icon celular">
-                <h6>Teléfonos</h6>
+                <i class="material-icons">phone</i>
+                <h6>Teléfono</h6>
                 <ul>
-                    <li><a href="">1234-5678</a></li>
-                    <li><a href="">1234-5678</a></li>
+                    <li>+54 11 6368-9006</li>
                 </ul>
             </div>
 
             <div class="card-contacto">
-                <img src="../assets/mapas-y-banderas.png" alt="icon mapa">
+                <i class="material-icons">location_on</i>
                 <h6>Dirección</h6>
                 <ul>
-                    <li><a href="">Dirección</a></li>
+                    <li>J. Salguero 2835 2° A (C1425DEM),
+                        C.A.B.A., Argentina</li>
                 </ul>
             </div>
+        </div>
         </section>
 
         <section class="redes-sociales">
-            <h2 class="subtitulo">Nuestras</h2><h2 class="texto-resaltado">redes</h2><h2 class="subtitulo">sociales</h2>
-            <div class="red-social">
-                <a href=""><img src="../assets/instagram.png" alt="Logo Instagram"></a>
-            </div>
-            <div class="red-social">
-                <a href=""><img src="../assets/linkedin.png" alt="Logo Linkedin"></a>
-            </div>
-            <div class="red-social">
-                <a href=""><img src="../assets/facebook.png" alt="Logo Facebook"></a>
+            <h2 class="subtitulo">Nuestras <span class="texto-resaltado">redes </span>sociales</h2>
+            
+            <div class="container-redes">
+                <div class="red-social">
+                    <a href="https://www.instagram.com/campoavalsgr/" target="_blank"><img src="../assets/instagram.png" alt="Logo Instagram"></a>
+                </div>
+                <div class="red-social">
+                    <a href="https://www.linkedin.com/company/campo-aval-sgr/?originalSubdomain=ar" target="_blank"><img src="../assets/linkedin.png" alt="Logo Linkedin"></a>
+                </div>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/profile.php?id=100095805301096&locale=es_LA" target="_blank"><img src="../assets/facebook.png" alt="Logo Facebook"></a>
+                </div>
             </div>
         </section>
     </main>

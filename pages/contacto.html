@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <div class="logo-header">
-            <a href="../index.html"><img src="../assets/logo.png" alt="logo campo aval"></a>
-        </div>
-        <nav>
-            <ul class="navbar">
-                <li><a class="pagina-secundaria" href="../index.html">Inicio</a></li>
-                <li><a class="pagina-secundaria" href="./la-empresa.html">La Empresa</a></li>
-                <li><a class="pagina-secundaria" href="./sgr.html">SGR</a></li>
-                <li><a class="pagina-secundaria" href="./asociarse.html">Asociarse</a></li>
-                <li><a class="pagina-actual" href="#">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md position-relative">
+            <a class="navbar-brand" href="#"><img class="logo-empresa" src="../assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icn-menu.png" alt="icono menu">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="./sgr.html">SGR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="./la-empresa.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="./asociarse.html">Asociarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-actual" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -59,31 +73,31 @@
             <h3 class="subtitulo">Nuestra ubicación</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.98250387364!2d-58.40981752433927!3d-34.579309256209356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57b5d2cdb39%3A0x28ad925f14664a63!2sJer%C3%B3nimo%20Salguero%202835%202%20a%2C%20C1425DEM%20CABA!5e0!3m2!1ses!2sar!4v1695745508946!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="card-contacto-container">
-            <div class="card-contacto">
-                <i class="material-icons">email</i>
-                <h6>Email</h6>
-                <ul>
-                    <li>info@campoaval.com</li>
-                </ul>
-            </div>
 
-            
-            <div class="card-contacto">
-                <i class="material-icons">phone</i>
-                <h6>Teléfono</h6>
-                <ul>
-                    <li>+54 11 6368-9006</li>
-                </ul>
-            </div>
+                <a class="card-contacto" href="mailto: info@campoaval.com">
+                        <i class="material-icons">email</i>
+                        <h6>Email</h6>
+                        <ul>
+                            <li>info@campoaval.com</li>
+                        </ul>
+                </a>
 
-            <div class="card-contacto">
-                <i class="material-icons">location_on</i>
-                <h6>Dirección</h6>
-                <ul>
-                    <li>J. Salguero 2835 2° A (C1425DEM),
-                        C.A.B.A., Argentina</li>
-                </ul>
-            </div>
+                <a class="card-contacto" href="https://wa.me/5491163689006?text=quiero informacion sobre sus servicios">
+                        <i class="material-icons">phone</i>
+                        <h6>Teléfono</h6>
+                        <ul>
+                            <li>+54 11 6368-9006</li>
+                        </ul>
+                </a>
+
+                <a class="card-contacto" href="https://maps.app.goo.gl/EnKHdZsVtLJZdFsp6">                 
+                        <i class="material-icons">location_on</i>
+                        <h6>Dirección</h6>
+                        <ul>
+                            <li>J. Salguero 2835 2° A (C1425DEM),
+                                C.A.B.A., Argentina</li>
+                        </ul>                        
+                </a>
         </div>
         </section>
 
@@ -112,9 +126,9 @@
             </div>
 
             <div class="redes-footer">
-                <a href=""><img src="../assets/instagram.png" alt="logo instagram"></a>
-                <a href=""><img src="../assets/facebook.png" alt="logo facebook"></a>
-                <a href=""><img src="../assets/linkedin.png" alt="logo linkedin"></a>
+                <a href="https://www.instagram.com/campoavalsgr/"><img src="../assets/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100095805301096&locale=es_LA"><img src="../assets/facebook.png" alt="logo facebook"></a>
+                <a href="https://www.linkedin.com/company/campo-aval-sgr/?originalSubdomain=ar"><img src="../assets/linkedin.png" alt="logo linkedin"></a>
             </div>
         </div>
 
@@ -127,7 +141,6 @@
         </div>
 
         <div class="menu-footer">
-            <h4>Menu</h4>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./asociarse.html">Asociarse</a></li>
@@ -138,9 +151,14 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright © Campo Aval S.A de C.V | Todos los derechos reservados</p>
+            <p>Copyright © Campo Aval S.A | Todos los derechos reservados</p>
         </div>
     </footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

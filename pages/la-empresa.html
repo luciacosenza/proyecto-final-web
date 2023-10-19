@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    
 </head>
 <body>
     <header>
-        <div class="logo-header">
-            <a href="../index.html"><img src="../assets/logo.png" alt="logo campo aval"></a>
-        </div>
-        <nav>
-            <ul class="navbar">
-                <li><a class="pagina-secundaria" href="../index.html">Inicio</a></li>
-                <li><a class="pagina-actual" href="#">La Empresa</a></li>
-                <li><a class="pagina-secundaria" href="./sgr.html">SGR</a></li>
-                <li><a class="pagina-secundaria" href="./asociarse.html">Asociarse</a></li>
-                <li><a class="pagina-secundaria" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md position-relative">
+            <a class="navbar-brand" href="#"><img class="logo-empresa" src="../assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="../assets/icn-menu.png" alt="icono menu">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="./sgr.html">SGR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-actual" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="./asociarse.html">Asociarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagina-secundaria" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-
     <main>
         <section class="banner-empresa">
             <h1>La empresa</h1>
@@ -137,9 +149,9 @@
             </div>
 
             <div class="redes-footer">
-                <a href=""><img src="../assets/instagram.png" alt="logo instagram"></a>
-                <a href=""><img src="../assets/facebook.png" alt="logo facebook"></a>
-                <a href=""><img src="../assets/linkedin.png" alt="logo linkedin"></a>
+                <a href="https://www.instagram.com/campoavalsgr/"><img src="../assets/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100095805301096&locale=es_LA"><img src="../assets/facebook.png" alt="logo facebook"></a>
+                <a href="https://www.linkedin.com/company/campo-aval-sgr/?originalSubdomain=ar"><img src="../assets/linkedin.png" alt="logo linkedin"></a>
             </div>
         </div>
 
@@ -152,7 +164,6 @@
         </div>
 
         <div class="menu-footer">
-            <h4>Menu</h4>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./asociarse.html">Asociarse</a></li>
@@ -163,8 +174,14 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright © Campo Aval S.A de C.V | Todos los derechos reservados</p>
+            <p>Copyright © Campo Aval S.A | Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -22,9 +22,15 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto';
+    background-color: #242223;
+}
+
 p{
     font-family: 'Roboto';
     font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .texto-resaltado{
@@ -43,153 +49,151 @@ p{
 /* HEADER */
 
 header{
-    background-color: rgba(131, 122, 122, 0.386);
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: 100;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.339);
 }
 
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    gap: 30px;
-}
-.navbar li{
-    list-style: none;
-    padding: 10px;
-    margin-top: 5px;
-
+.logo-empresa{
+    width: 80px;
 }
 
-.navbar li a{
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 1rem;
-    font-weight: 400;
-}
 .pagina-actual{
-    color: #072042; 
+    border-bottom: 1px solid white;
+    color: #e6e5e2;
 }
 .pagina-secundaria{
     color: #e6e5e2;
 }
-.logo-header{
-    text-align: center;
+
+.nav-link{
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0;
 }
 
-.logo-header img{
-    padding: 0.625rem;
-    height: 4.375rem;
-    max-width: 100%;
-    max-height: 100%;
+.nav-link:hover{
+    color: white;
 }
+
+.navbar-nav li{
+    margin-right: 30px;
+}
+
 
 /* PAGINA PRINCIPAL */
-.banner-inicio{
-    display: flex;
-    flex-direction: column;
-    background-image: url("https://images.unsplash.com/photo-1549906145-41def6343691?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80");
-    background-size: cover;
-    background-position:center;
-    width: 100%;
-    height:100vh;
-    box-shadow: 2px 2px 5px gray;
-    
+
+.carousel-item img{
+    filter:brightness(50%);
 }
-.banner-inicio .img-banner img{
+
+#banner-inicio{
+    width: 100%;
+    height: 800px;
+}
+
+.carousel-inner{
     width: 100%;
 }
 
-.banner-inicio button{
+.carousel-item img{
+    object-fit: cover;
+    height: 800px;
+}
+
+.titulo-banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 30%;
+    padding: 10px;
+    color:#e6e5e2;
+    font-family: 'Roboto';
+}
+.titulo-banner h1{
+    padding-left: 10%;
+    font-family: 'Roboto';
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.titulo-banner  p{
+    padding-left: 10%;
+    color: #e6e5e2;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 300;
+    border-bottom: 1px solid #e6e5e2;
+}
+
+.titulo-banner button{
     align-self: center;
-    margin-top: 70px;
+    margin-top: 10%;
     font-size: 20px;
     color: #e6e5e2;
     background-color: rgba(255, 255, 255, 0.277);
-    width: 9.375rem;
-    padding: 1.25rem;
+    width:150px;
+    padding: 20px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50px;
     box-shadow: 2px 2px 20px rgba(47, 46, 46, 0.222);
 }
 
-.banner-inicio button a{
+.titulo-banner button a{
     text-decoration: none;
     color: #e6e5e2;
 }
 
-.banner-inicio button:hover{
+.titulo-banner button:hover{
     background-color: #24222342;
     cursor: pointer;
-}
-.banner-inicio .titulo-banner{
-    padding-top:30%;
-}
-.banner-inicio .titulo-banner h1{
-    padding-left: 60px;
-    color:#e6e5e2;
-    font-family: Arial light, Helvetica, sans-serif;
-    font-size: 4rem;
-    font-weight: 100;
-    border-bottom: 1px solid #e6e5e2;
-}
-
-.banner-inicio  p{
-    padding-left: 60px;
-    color: #e6e5e2;
-    font-family: 'Roboto';
-    font-size: 2rem;
-    font-weight: 300;
 }
 
 .quienes-somos{
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    padding: 50px;
-    background-color: #e6e5e2;
-
+    padding: 7%;
+    color: #e6e5e2;
 }
+
 .quienes-somos img{
-    max-width: 40%;
+    width: 40%;
     height: auto;
+    object-fit: cover;
     margin-right: 70px;
+    border-radius: 10px;
 }
 
 .quienes-somos div{
-    color: #072042;
     font-family: 'Roboto';
     margin-left: 70px;
 }
 
-
-.quienes-somos div h2{
-    font-size: 2.5rem;
-    font-weight: 300;
-
-}
-
 .quienes-somos div p{
-    padding: 25px;
-    padding-right: 100px;
+    padding: 1.25rem;
+    margin-right: 80px;
+    padding-right: 30px;
 }
 
+.linea{
+    width: 90%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #e6e5e26b;
+}
 
 .nuestros-servicios{
-    background-color: hsl(46, 39%, 85%);
+    color: #e6e5e2;
     width: 100%;
-    padding: 20px;
-
+    padding: 7%;
 }
 
 .nuestros-servicios .subtitulo{
     margin-left: 50px;
-    padding: 30px;
+    padding: 5%;
 }
 .servicios{
     display: flex;
@@ -199,7 +203,6 @@ header{
     gap: 30px;
 }
 
-
 .servicio{
     display: flex;
     flex-direction: column;
@@ -207,14 +210,16 @@ header{
     width: 22%;
     margin: 10px; 
     padding: 10px;
+    
 }
 
 .servicios .servicio .container-icon-servicio{
     width: 150px;
     height: auto;
     border-radius: 50%;
-    background-color: #072042;
+    background-color: #e6e5e2;
 }
+
 
 .servicios .servicio .container-icon-servicio img{
     padding: 35px;
@@ -228,12 +233,15 @@ header{
     margin: 10px;
     font-weight: 400;
     font-family: 'Roboto';
-    color: #242223;
 }
-.servicios .servicio p{
+
+.servicio ul{
+    margin-left: 5%;
+}
+
+.servicios .servicio ul li{
     padding: 20px;
-    color: #242223;
-    text-align: center;
+    text-align: left;
 }
 
 /* FOOTER */
@@ -970,7 +978,7 @@ input::placeholder{
     text-size-adjust: 30px;
 }
 
-/* form contacto */
+/* contacto */
 
 .banner-contacto{
     background-image: url("../assets/banner-contacto.jpg");
@@ -978,6 +986,10 @@ input::placeholder{
     height: 400px;
     background-size: cover;
     
+}
+
+.banner-contacto h1{
+    font-size: 32px;
 }
 
 .titulo-contacto{
@@ -998,7 +1010,7 @@ input::placeholder{
 .form-contacto{
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 55%;
     background-color: #E6E5E2;
     width: 40%;
     height:700px;
@@ -1055,21 +1067,21 @@ input::placeholder{
 
 .card-contacto-container{
     position: absolute;
-    top: 950px;
+    top: 1040px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     padding-top: 50px;
-    gap: 10%;
 }
+
 .card-contacto{
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 20% 80%;
     grid-template-areas:    "titulo-card titulo-card"
                             "icon-card info-card ";
-    width: 25%;
+    width: 300px;
     height: 150px;
     padding: 20px;
     background-color: #ffffff;
@@ -1077,7 +1089,14 @@ input::placeholder{
     font-size: 18px;
     font-weight: 300;
     border-radius: 15px;
+    transition: 1s;
+    text-decoration: none;
+    color: #242223;
+}
 
+.card-contacto:hover{
+    transform: scale(1.1);
+    text-decoration:  none;
 }
 
 .material-icons{
@@ -1086,6 +1105,7 @@ input::placeholder{
     align-self: center;
     justify-self: center;
 }
+
 
 .card-contacto h6{
     grid-area: titulo-card;
@@ -1105,7 +1125,6 @@ input::placeholder{
 }
 
 .redes-sociales{
-    background-color: #242223;
     color: #e6e5e2;
     height: 500px;
 }
@@ -1134,33 +1153,331 @@ input::placeholder{
     gap: 10%;
 }
 
-@media screen and (max-width: 768px) {
-    .banner-inicio{
-        height: 416px;
+@media (max-width: 1024px){ 
+
+.quienes-somos{
+    flex-direction: column;
+    padding: 7%;
+    background-color: #242223;
+    color: #e6e5e2;
+
+}
+
+.quienes-somos img{
+    align-self: center;
+    width: 80%;
+    height: fit-content;
+    margin: 0;
+    margin-top: 10px;
     }
-    .banner-inicio button{
-        font-size: 0.875rem;
+    
+    .servicios{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "servicio1 servicio2"
+        "servicio3 servicio4";
+
     }
-    .banner-inicio .titulo-banner h1 {
-        font-size: 2rem; 
+    
+    .servicios:first-child{
+        grid-area: servicio1;
     }
-    .banner-inicio p {
-        font-size: 1.5rem; 
+    .servicios:nth-child(2){
+        grid-area: servicio2;
     }
-    .quienes-somos{
-        height: 400px;
+
+    .servicios:nth-child(3){
+        grid-area: servicio3;
     }
-    .quienes-somos img{
-        width: 50%;
+
+    .servicios:last-child{
+        grid-area: servicio4;
+
     }
-    .servicio {
-        width: 30%; 
+
+    .servicio{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin: 10px; 
+        padding: 10px;
     }
-    .servicios .servicio h3 {
-        font-size: 1.25rem; 
+
+    /* footer */
+    .logo-footer img{
+        width: 50px;
     }
-    .servicios .servicio p {
-        font-size: 1rem;
+
+    .redes-footer a img{
+        width: 20px;
+    }
+
+    .menu-footer{
+        font-size: 16px;
+    }
+    
+    .card-contacto{
+        width: 250px;
+    }
+
+    .material-icons{
+        font-size: 40px;
+        justify-self: flex-start;
+    }
+
+    .card-contacto ul li{
+        font-size: 16px;
     }
 }
 
+@media (max-width: 768px) {
+
+    .titulo-banner h1{
+        font-size: 3rem;
+    }
+
+    .titulo-banner p{
+        font-size: 1.5rem;
+    }
+
+    .titulo-banner {
+        padding: 10px;
+    }
+
+    .titulo-banner button{
+        width: 150px;
+        padding: 15px;
+    }
+
+    .quienes-somos div h2{
+        font-size: 2.5rem;
+        margin-right: 50px;
+    
+    }
+    
+    .quienes-somos div p{
+        padding: 16px;
+        text-align: left;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: max-content;
+    }
+    
+    .logo-redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-footer{
+        display: flex;
+        padding-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-footer img{
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .redes-footer{
+        justify-self: center;
+        align-self: center;
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+
+    .menu-footer ul{
+        display: flex;
+    }
+
+    .newsletter h3{
+        font-size: 20px;
+        margin: 0%;
+    }
+
+    .newsletter form input{
+        height: 40px;
+    }
+
+    .newsletter form button{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    /* CONTACT PAGE */
+    .titulo-contacto{
+        padding-top: 100px;
+    }
+
+    .form-contacto{
+        top:30%;
+        left: 10%;
+        width: 80%;
+    }
+    .ubicacion{
+        height: 1500px;
+        padding-top: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+
+    .ubicacion .subtitulo{
+        font-size: 36px;
+        margin-left: 20px;
+        padding-top: 21px;
+    }
+
+    .ubicacion iframe{
+        width: 80%;
+        margin: 0;
+        padding: 0%;
+        
+    }
+
+    .card-contacto-container{
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .card-contacto{
+        width: 80%;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .material-icons{
+        font-size: 3rem;
+    }
+
+    .redes-sociales a img{
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 425px){
+    
+    .titulo-banner{
+        top: 50%;
+    }
+    .titulo-banner h1{
+        font-size: 2.5rem;
+    }
+
+    .titulo-banner p{
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+
+    .titulo-banner button{
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    .titulo-banner button a{
+        font-size: 1rem;
+    }
+
+    .quienes-somos{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        background-color: #242223;
+        color: #e6e5e2;
+    
+    }
+    .quienes-somos img{
+        align-self: center;
+        width: 80%;
+        height: fit-content;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    
+    .quienes-somos div{
+        justify-self: center;
+        margin: 0;
+        padding: 10%;
+    }
+
+    .quienes-somos div h2{
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    
+    .quienes-somos div p{
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nuestros-servicios .subtitulo{
+        margin: 0;
+    }
+
+    .redes-sociales{
+        height: 550px;
+    }
+
+    .redes-sociales h2{
+        font-size: 32px;
+    }
+
+    .redes-sociales h2 span{
+        font-size: 36px;
+    }
+
+    .container-redes{
+        flex-direction: column;
+    }
+
+    .red-social{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 375px){
+    #banner-inicio{
+        height: 667px;
+    }
+
+    #banner-inicio .carousel-inner{
+        height: 667px;
+    }
+
+    .titulo-banner{
+        top:30%;
+    }
+    .newsletter form input{
+        width: 250px;
+    }
+
+
+}

@@ -1,0 +1,47 @@
+@media (max-width: 1024px){ 
+    .quienes-somos{
+        width: 100%;
+        @include flexbox(column, wrap, center, center, 30px);
+        div{
+            @include flexbox(column, wrap, center, center, 0);
+            width: 100%;
+        h2{
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        p{
+            margin: 0px;
+            text-align: center;
+            width: 80%;
+        }
+    }
+    iframe{
+        width: 90%;
+    }
+    }
+
+    .nuestros-servicios{
+        h2{
+            font-size: 2.2rem;
+        }
+        .servicios{
+            .card{
+                width: 288px;
+                .container-icon-servicio{
+                    width: 120px;
+                }
+                .card-body{
+                    .card-text{
+                    font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-footer{
+        img{
+            width: 50px;
+        }
+    }
+}

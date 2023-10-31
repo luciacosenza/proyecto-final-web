@@ -1,0 +1,139 @@
+.banner-empresa{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url("../assets/banner-empresa.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:300px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.43);
+    h1{
+        width: 100%;
+        padding-left: 60px;
+        color:#e6e5e2;
+        font-size: 4rem;
+        font-weight:300;
+    }
+}
+
+.historia{
+    color: $color;
+    padding: 5% 10% 5% 10%;
+    width: 100%;
+    h2{
+        @include subtitulo;
+        padding-bottom: 30px;
+        hr{
+            position:static;
+            width: 300px;
+            height: 3px;
+            background-color: $color-resaltado;
+            transform: none;
+        }
+    }
+    div{
+        @include flexbox(row, nowrap, center, center, 50px);
+        margin-bottom: 50px;
+        h3{
+            width: 10%;
+            text-align: center;
+            @include resaltado(3rem);
+        }
+        p{
+            text-align: justify;
+            width: 90%;
+            border-left: 3px solid $color;
+            padding-left: 50px;
+        }
+    }
+}
+
+.mision-vision{
+    @include flexbox(column, nowrap, center, center, 50px);
+    width: 100%;
+    height: auto;
+    background-color: $color;
+    color: $background-color;
+    padding: 5% 10% 5% 10%;
+    div{
+        @include flexbox(row, nowrap, auto, center, 50px);
+        width: 100%;
+        height: auto;
+        h3{
+            @include subtitulo;
+            span{
+            @include resaltado(3rem); 
+        }
+        }
+    }
+    hr{
+        background-color: $color-resaltado;
+        height: 2px;
+        width: 50px;
+        align-self: flex-start;
+    }
+}
+
+.equipo{
+    @include flexbox(column, wrap, center, center, 20px);
+    width: 100%;
+    height: auto;
+    background-color: $color-resaltado;
+    color: $color;
+    padding: 5% 10% 5% 10%;
+    h2{
+        @include subtitulo;
+        padding-bottom: 30px;
+        span{
+            @include resaltado(3rem);
+        }
+        hr{
+            width: 20px;
+            height: 3px;
+            background-color: $color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); 
+        }
+    }
+    .miembros{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "miembro1 miembro2 miembro3"
+                             "miembro4 miembro5 miembro6";
+        div{
+            width: 100%;
+            @include flexbox(column, nowrap, center, center, none);
+            margin-top: 20px;
+            transition: 0.6s;
+            &:first-child{
+                grid-area: miembro1;
+            }
+            &:nth-child(2){
+                grid-area: miembro2;
+            }
+            &:nth-child(3){
+                grid-area: miembro3;
+            }
+            &:nth-child(4){
+                grid-area: miembro4;
+            }
+            &:nth-child(5){
+                grid-area: miembro5;
+            }
+            &:nth-child(6){
+                grid-area: miembro6;
+            }
+            h4{
+                text-align: center;
+            }
+            &:hover{
+                text-shadow: 2px 0 $background-color;
+                transform: scale3d(2);
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+@import "./base/reset";
+@import "./base/typo";
+
+@import "./components/navbar-bootstraps";
+
+@import "./layout/main-index";
+@import "./layout/main-sgr";
+@import "./layout/main-empresa";
+@import "./layout/main-asociarse";
+@import "./layout/main-contacto";
+@import "./layout/footer";
+@import "./layout/media-1024px"

@@ -1,0 +1,172 @@
+#banner-inicio{
+    width: 100%;
+    height: 700px;
+    .carousel-inner{
+        width: 100%;
+        .carousel-item{
+            img{
+                object-fit: cover;
+                height:700px;
+                filter:brightness(50%);}
+        }
+    }
+}
+
+.titulo-banner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 35%;
+    color: $color;
+    font-family: 'Inter', sans-serif;
+    h1{
+        padding-left: 10%;
+        padding-bottom: 10px;
+        font-size: 4rem;
+        font-weight: 500;
+        border-bottom: 1px solid $color;
+        text-shadow: 3px 3px #01739c;
+    }
+    p{
+        padding-left: 10%;
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    button{
+        align-self: center;
+        margin-top: 7%;
+        font-size: 20px;
+        color: #e6e5e2;
+        background-color: rgba(255, 255, 255, 0.277);
+        width:175px;
+        padding: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50px;
+        box-shadow: 2px 2px 20px rgba(47, 46, 46, 0.222);
+        transition: 1s;
+        a{
+            text-decoration: none;
+            color: #e6e5e2;
+        }
+        &:hover{
+            background-color: #24222342;
+            cursor: pointer;
+            box-shadow: 2px 2px 20px #e6e5e262;
+        }
+    }
+}
+
+.quienes-somos{
+    @include flexbox(row, nowrap, space-evenly, center , 10px);
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: $color;
+    div{
+        width: 50%;
+        h2{
+            @include subtitulo;
+            padding: 20px;
+            span{
+                font-weight: 500;
+                text-shadow: 2px 2px #01739c;
+            }
+        }
+        hr{
+            background-color: #01739c;
+            width: 100px;
+            height: 2px;
+            margin-left: 30px;
+        }
+        p{
+            padding: 1.25rem;
+            text-align: justify;
+            margin-right: 50px;
+        }
+        button{
+            border-radius: 50px;
+            width: 150px;
+            height: 50px;
+            margin-left:20px;
+            border: 2px solid $color;
+            background-color: #01739c;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.05);
+            }
+            a{
+                color: $color;
+                text-decoration: none;
+            }
+        }
+    }
+    iframe{
+        width: 600px;
+        border-radius: 10px;
+    }
+}
+
+.linea{
+    width: 90%;
+    height: 0.0625rem;
+    margin: 0 auto;
+    background-color: #e6e5e26b;
+}
+
+.nuestros-servicios{
+    color: #e6e5e2;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    h2{
+        @include subtitulo;
+        padding: 0 1.25rem 0 20px;
+    }
+    hr{
+        background-color: #01739c;
+        width: 25rem;
+        height: 0.125rem;
+        margin-left: 1.25rem;
+    }
+    .servicios{
+        @include flexbox(row, nowrap, center, center, 5%);
+        color: $background-color;
+        .card{
+            background-color: $color;
+            width: 18rem;
+            height: 500px;
+            margin-top: 1.875rem;
+            border-bottom: 5px solid $color-resaltado;
+            transition: 1s;
+            .container-icon-servicio{
+                width: 9.375rem;
+                height: auto;
+                border-radius: 50%;
+                border: 5px solid $color-resaltado;
+                background-color: $color;
+                align-self: center;
+                margin-top: 1.875rem;
+                transition: 1s;
+                img{
+                    padding: 35px;
+                    width: 100%;
+                    max-width: 100%; 
+                }
+            }
+            &:hover{
+                background-color: #01739c;
+                color: #e6e5e2;
+                .container-icon-servicio{
+                    border: 5px solid $background-color;
+                    background-color: $color-resaltado;
+                }
+            }
+        }
+    }
+}

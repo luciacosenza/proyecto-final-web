@@ -1,0 +1,142 @@
+.banner-contacto{
+    background-image: url("../assets/banner-contacto.jpg");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    div{
+        color: $color;
+        border-bottom:1px solid #e6e5e2;
+        padding-left: 5%;
+        padding-top: 200px;
+        p{
+            font-size: 1.25rem;
+            font-weight: 300;
+            padding-left: 20px;
+        }
+        h1{
+            @include subtitulo;
+        }
+    }
+}
+
+.form-contacto{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    background-color: #E6E5E2;
+    width: 35%;
+    height:600px;
+    border-radius: 2%;
+    box-shadow: 3px 0 70px gray;
+    form{
+        @include flexbox(column, wrap, center, center, 0px);
+        width: 100%;
+        height: 100%;
+        label{
+            padding-top: 5%;
+            width: 100%;
+            .mensaje{
+                height: 150px;
+            }
+        }
+        input{
+            &::placeholder{
+                margin-left: 40px;
+            }
+        }
+    }
+    .boton-enviar{
+        margin-top: 3%;
+    }
+}
+
+.ubicacion{
+    padding-top: 3%;
+    width: 100%;
+    height: 700px;
+    background-color: $color;
+    color: $background-color;
+    padding: 5% 10% 5% 10%;
+    h3{
+        @include subtitulo;
+    }
+    iframe{
+        width: 40%;
+        height: 350px;
+    }
+}
+
+.card-contacto-container{
+    position: absolute;
+    top: 1040px;
+    left: 0;
+    @include flexbox(row, wrap, space-around, center, 0);
+    width: 100%;
+    padding-top: 50px;
+    a{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas:    "titulo-card titulo-card"
+                                "icon-card info-card ";
+        width: 300px;
+        height: 150px;
+        padding: 20px;
+        background-color: white;
+        font-size: 1.125rem;
+        font-weight: 300;
+        border-radius: 15px;
+        transition: 1s;
+        text-decoration: none;
+        color: #242223;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .material-icons{
+            grid-area: icon-card;
+            font-size: 3rem;
+            align-self: center;
+            justify-self: center;
+        }
+        h6{
+            grid-area: titulo-card;
+            align-self: baseline;
+            justify-self: center;
+        }
+        ul{
+            grid-area: info-card;
+            align-self: center;
+            text-decoration: none;
+            li{
+                list-style: none;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.redes-sociales{
+    color: $color;
+    height: 500px;
+    h2{
+        padding: 5% 10% 5% 10%;
+        @include subtitulo;
+        span{
+            @include resaltado(3rem);
+        }
+    }
+    a{
+        img{
+            width: 150px;
+            filter: drop-shadow(10px 10px 70px rgba(138, 155, 189, 0.40));
+            transition: 1s;
+            &:hover{
+                transform: scale(1.1);
+                filter: drop-shadow(10px 10px 70px rgb(52, 22, 184));
+            }
+        }
+    }
+}
+
+.container-redes{
+    @include flexbox(row, wrap, space-evenly, center, 10%);
+}

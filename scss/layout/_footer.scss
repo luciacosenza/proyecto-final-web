@@ -1,0 +1,22 @@
+footer{
+    @include flexbox(row, wrap, space-between, center, 0);
+    color: $color;
+    padding: 2% 7% 2% 7%;
+    a{
+        img{
+            width: 90px;
+            padding: 10%;
+        }
+    }
+    ul{
+        list-style: none;
+        @include flexbox(row, nowrap, center, center, 10px);
+        li{
+            a{
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

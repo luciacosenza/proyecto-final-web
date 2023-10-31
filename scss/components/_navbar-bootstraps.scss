@@ -1,0 +1,28 @@
+    .navbar-expand-md{
+        .navbar-brand{
+            img{
+                width: 80px; }
+            }
+        .navbar-nav{
+            gap: 30px;
+            padding-right: 20px;
+            .nav-link{
+                padding-right: 0;
+                padding-left: 0; 
+                color: #e6e5e2;
+                font-family: 'Inter', sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                padding: 0;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                    color: #01739c;}
+            }
+            .pagina-actual{
+                border-bottom: 1.5px solid #e6e5e2;
+                &:hover{
+                    border-bottom: 1.5px solid #01739c ;}
+            }
+        }
+    }

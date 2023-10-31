@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campo Aval</title>
+    <title>inicio - Campo Aval</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md position-relative">
-            <a class="navbar-brand" href="#"><img class="logo-empresa" src="./assets/logo.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img class="logo-empresa" src="./assets/logo.png" alt="Logo de Campo Aval"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="./assets/icn-menu.png" alt="icono menu">
             </button>
@@ -23,22 +23,22 @@
                         <a class="nav-link pagina-actual" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagina-secundaria" href="./pages/sgr.html">SGR</a>
+                        <a class="nav-link" href="./pages/sgr.html">SGR</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagina-secundaria" href="./pages/la-empresa.html">Sobre nosotros</a>
+                        <a class="nav-link" href="./pages/la-empresa.html">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagina-secundaria" href="./pages/asociarse.html">Asociarse</a>
+                        <a class="nav-link" href="./pages/asociarse.html">Asociarse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pagina-secundaria" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    
+
 
     <main>
         <section id="banner-inicio" class="carousel slide carousel-fade" data-ride="carousel">
@@ -55,114 +55,70 @@
             </div>
 
             <div class="titulo-banner">
-                <h1>Campo Aval S.G.R.</h1>
+                <h1>Campo Aval SGR</h1>
                 <p>Más créditos, menores costos</p>
                 <button><a href="./pages/asociarse.html">Asociarse</a></button>
             </div>
         </section>
         <section class="quienes-somos">
             <div>
-                <h2 class="subtitulo">Somos una <span>sociedad de garantía recíproca</span></h2>
-                <p>Facilitamos a las PYMES el acceso a financiamiento con las mejores condiciones. Buscamos brindamos el mejor asesoramiento financiero para gestionarlo de una manera eficiente.</p>       
+                <h2>Somos una <span>sociedad de garantía recíproca</span></h2>
+                <hr>
+                <p>Nuestro objetivo principal es asesorar y cuidar los intereses de cada uno de nuestros clientes de manera personalizada.</p>
+                <button><a href="./pages/sgr.html">Saber más</a></button>
             </div>
-            <img class="" src="./assets/img-quienesSomos.jpeg" alt="personas trabajando">
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7117909079104053248?compact=1" height="399" width="710" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
         </section>
-        <div class="linea"></div>
+        <hr class="linea">
         <section class="nuestros-servicios">
-            <h2 class="subtitulo">Nuestros servicios</h2>
+            <h2>Nuestros servicios</h2>
+            <hr>
             <div class="servicios">
-            <div class="servicio">
-                <div class="container-icon-servicio">
-                    <img src="./assets/icon-cheque.png" alt="icono cheque">
+                <!-- card1 -->
+                <div class="card">
+                    <div class="container-icon-servicio">
+                        <img src="./assets/icon-cheque.png" alt="icono cheque">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Garantías financieras</h5>
+                      <p class="card-text">en Mercado de Capitales (cheques y pagarés bursátiles avalados) y en Bancos Comerciales (capital de trabajo, activos fijos, leasing).</p>
+                    </div>
                 </div>
-                <h3>Cheques de pago diferido</h3>
-                <ul>
-                    <li>Financiamiento en $ en mercado de capitales</li>
-                    <li>Agilidad en la obtención de fondos (24-48 hrs)</li>  
-                    <li>Cheques propios o de terceros</li>
-                    <li>Plazos hasta 360 días</li>
-                    <li>Destino capital de trabajo.</li>
-                </ul>
-            </div>
-
-            <div class="servicio">
-                <div class="container-icon-servicio">  
-                    <img src="./assets/icon-banco.png" alt="icono banco">
+                <!-- card2 -->
+                <div class="card" >
+                    <div class="container-icon-servicio">
+                        <img src="./assets/icon-banco.png" alt="icono banco">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Garantías Técnicas</h5>
+                      <p class="card-text">para mercados de valores regulados: MATBA</p>
+                    </div>
                 </div>
-                <h3>Préstamos bancarios</h3>
-                <ul>
-                    <li>Financiamiento en $ o U$D con entidades financieras con acuerdo</li>
-                    <li>Plazo hasta 5 años</li>
-                    <li>Destino capital de trabajo, bienes de capital ó proyectos de inversión</li>
-                    <li>Prefinanciación de exportaciones con tasas muy competitivas</li>
-                </ul>
+                <!-- card3 -->
+                <div class="card">
+                    <div class="container-icon-servicio">
+                        <img src="./assets/icon-servicio3.png" alt="Servicio 3">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Administración Profesional</h5>
+                      <p class="card-text">de la cartera de inversiones del Fondo de Riesgo conforme política inversiones predefinida con los aportantes.</p>
+                    </div>
+                </div>  
             </div>
-
-            <div class="servicio">
-                <div class="container-icon-servicio">
-                    <img src="./assets/icon-servicio3.png" alt="Servicio 3">
-                </div>
-                <h3>Obligaciones negociables</h3>
-                <ul>
-                    <li>Financiamiento en $ o USD en mercado de capitales</li>
-                    <li>Bono privado que representa valores de deuda de la empresa que las emite</li>
-                    <li>Régimen simplificado de ON para MiPyMes</li>
-                    <li>Plazo hasta 5 años</li>
-                </ul>
-            </div>
-
-            <div class="servicio">
-                <div class="container-icon-servicio">
-                    <img src="./assets/icon-servicio4.png" alt="servicio4">
-                </div>
-                <h3>Pagares bursátiles</h3>
-                <ul>
-                    <li>Financiamiento en $ o USD en mercado de capitales</li>
-                    <li>Agilidad en la obtención de fondos (24-48 hrs)</li>
-                    <li>Plazos entre 6 y 36 meses</li>
-                    <li>Destino capital de trabajo, bienes de capital o proyectos de inversión</li>
-                </ul>
-            </div>
-        </div>
         </section>
     </main>
-
+    <hr class="linea">
     <footer>
-        <div class="logo-redes">
-            <div class="logo-footer">
-                <img src="./assets/logo.png" alt="logo campo aval">
-                <p> J. Salguero 2835 2° A, C.A.B.A., Argentina</p>
-            </div>
-
-            <div class="redes-footer">
-                <a href="https://www.instagram.com/campoavalsgr/"><img src="./assets/instagram.png" alt="logo instagram"></a>
-                <a href="https://www.facebook.com/profile.php?id=100095805301096&locale=es_LA"><img src="./assets/facebook.png" alt="logo facebook"></a>
-                <a href="https://www.linkedin.com/company/campo-aval-sgr/?originalSubdomain=ar"><img src="./assets/linkedin.png" alt="logo linkedin"></a>
-            </div>
-        </div>
-
-        <div class="newsletter">
-            <h3>Newsletter</h3>
-            <form action="" method="get">
-                <input type="email" id="email" placeholder="E-mail" required>
-                <button type="submit">ok</button>
-            </form>   
-        </div>
-
-        <div class="menu-footer">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/asociarse.html">Asociarse</a></li>
-                <li><a href="./pages/sgr.html">SGR</a></li>
-                <li><a href="./pages/contacto.html">Contactanos</a></li>
-                <li><a href="./pages/la-empresa.html">La empresa</a></li>
-            </ul>
-        </div>
-
-        <div class="copyright">
-            <p>Copyright © Campo Aval S.A | Todos los derechos reservados</p>
-        </div>
-    </footer>
+        <a href="#">
+            <img src="./assets/logo.png" alt="logo campo aval">
+        </a>
+        <span>© 2023 Campo Aval SGR</span>
+        <ul>
+            <li><a href="https://www.instagram.com/campoavalsgr/"><img src="../assets/instagram.png" alt="logo instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100095805301096&locale=es_LA"><img src="../assets/facebook.png" alt="logo facebook"></a></li>
+            <li><a href="https://www.linkedin.com/company/campo-aval-sgr/?originalSubdomain=ar"><img src="../assets/linkedin.png" alt="logo linkedin"></a></li>
+        </ul>
+        </footer>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

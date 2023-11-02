@@ -66,14 +66,31 @@
 
     }
 
-    .card-contacto-container a{
+    .card-contacto-container{
+        a{
         width: 250px;
-        .material-icons{
-            font-size: 2.5rem;
-            justify-self: flex-start;
-        }
-        ul{
-            font-size: 1rem;
+            .material-icons{
+                font-size: 2.5rem;
+                justify-self: flex-start;
+            }
+            ul{
+                font-size: 1rem;
+            }
         }
     }
+
+    .banner-asociarse{
+        div{
+            form{
+                @include flexbox(column, nowrap, space-evenly, center, 10px);
+                .campo-form{
+                    width: 100%;
+                }
+                i{
+                    display: none;
+                }
+            }
+        }
+    }
+
 }

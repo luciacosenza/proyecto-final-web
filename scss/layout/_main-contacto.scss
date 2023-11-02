@@ -1,3 +1,7 @@
+.main-contacto{
+    background-color: $color;
+}
+
 .banner-contacto{
     background-image: url("../assets/banner-contacto.jpg");
     width: 100%;
@@ -115,11 +119,11 @@
     }
 }
 .redes-sociales{
+    background-color: $background-color;
     color: $color;
-    height: 500px;
-    padding-top: 50px;
+    height: auto;
+    padding: 7% 10% 5% 10%;
     h2{
-        padding: 5% 10% 5% 10%;
         @include subtitulo;
         span{
             @include resaltado(3rem);
@@ -140,4 +144,5 @@
 
 .container-redes{
     @include flexbox(row, wrap, space-evenly, center, 10%);
+    padding: 20px;
 }

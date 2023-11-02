@@ -149,4 +149,76 @@
             }
         }
     }
+
+    .doc-utiles{
+        text-align: center;
+        h2{
+            font-size: 2rem;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+        }
+    }
+
+    .banner-contacto{
+        height: 200px;
+        div{
+            padding-top: 50px;
+        }
+    }
+
+    .form-contacto{
+        width: 100%;
+        position: static;
+        @include flexbox(row, nowrap, center, center, 0);
+        overflow: visible;
+        padding-top: 20px;
+        form{
+            width: 80%;
+            height: auto;
+            padding: 20px;
+            border-radius: 2%;
+            box-shadow: 3px 0 70px gray;
+        }
+    }
+
+    .ubicacion{
+        height: auto;
+        @include flexbox(column, nowrap, flex-start, center, 10px);
+        h3{
+            font-size: 36px;
+            margin-left: 20px;
+            padding-top: 21px;
+        }
+        iframe{
+            width: 80%;
+            margin: 0;
+            padding: 0%;
+        }
+    }
+
+    .card-contacto-container{
+        position: static;
+        flex-direction: column;
+        gap: 40px;
+        a{
+            width: 80%;
+            font-size: 1.25rem;
+        }
+    }
+    .redes-sociales{
+        text-align: center;
+        padding: 10%;
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .container-redes{
+        flex-direction: column;
+        gap: 40px;
+    }
 }

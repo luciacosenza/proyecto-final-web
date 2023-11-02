@@ -66,6 +66,80 @@
         }
     }
 
+    .banner-empresa{
+        h1{ 
+            font-size: 2rem;
+        }
+    }
+
+    .mision-vision{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        div{
+            flex-direction: column;
+            gap:10px;
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    .historia{
+        h2{
+            font-size: 2rem;
+            hr{
+                width: 150px;
+            }
+        }
+        div{
+            flex-direction: column;
+            h3{
+                width: 100%;
+            }
+            p{
+                border: none;
+                padding: 0;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+
+    .equipo{
+        .miembros{
+            @include flexbox(column, nowrap, center, center, 10px);
+        }
+    }
+
+    .banner-asociarse{
+        input[type="file"]{
+            font-size: 10px;
+            button{
+                font-size: 10pxs;
+            }
+        }
+    }
+
+    .redes-sociales{
+        h2{
+            font-size: 1.75rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .container-redes{
+        div{
+            a{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+
     footer{
         ul{
             li{

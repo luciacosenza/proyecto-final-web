@@ -1,0 +1,152 @@
+@media (max-width: 768px){
+    .titulo-banner{
+        padding: 10px;
+        h1{
+            font-size: 3.5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        button{
+            margin-top: 50px;
+        }
+    }
+
+    footer{
+        a{
+            img{
+                width: 70px;
+            }
+        }
+        span{
+            font-size: 0.75rem;
+        }
+    }
+
+    .nuestros-servicios{
+        .servicios{
+            flex-direction: column;
+            .card{
+                width: 100%;
+                height: fit-content;
+                .card-body{
+                    text-align: center;
+                }
+            }
+        }
+        hr{
+            width: 300px;
+        }
+    }
+
+    .nav-link{
+        &:hover{
+            transform: none;
+        }
+    }
+
+    .pagina-actual{
+        border-bottom:none;
+        &:hover{
+            border-bottom: none;
+        }
+    }
+
+    .banner-sgr{
+        height: 400px;
+        h1{
+            font-size: 2rem;
+            span{
+                font-size: 2.2rem;
+            }
+        }
+        p{
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: left;
+        }
+    }
+
+    .requisitos{
+        div{
+            padding: 5% 3% 5% 3%;
+            h2{
+                font-size: 1.75rem;
+                span{
+                    font-size: 1.9rem;
+                }
+            }
+            ul{
+                font-size: 16px;
+            }
+        }
+        img{
+            width: 50%;
+        }
+        
+    }
+
+    #como-asociarse{
+        h2{
+            font-size: 1.8rem;
+        }
+        .container-info{
+            .info{
+                height: fit-content;
+            }
+        }
+    }
+
+    .banner-empresa{
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+        h1{
+            font-size: 3rem;
+            padding: 0;
+        }
+    }
+
+    .mision-vision{
+        div{
+            h3{
+                font-size: 2rem;
+                span{
+                    font-size: 2.2rem;
+                }
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+    .historia{
+        div{
+            h3{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .equipo{
+        .miembros{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "miembro1 miembro2""miembro3 miembro4""miembro5 miembro6";
+            div{
+                h4{
+                    font-size: 1.25rem;
+                }
+            }
+            }
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2.2rem;
+            }
+        }
+    }
+}

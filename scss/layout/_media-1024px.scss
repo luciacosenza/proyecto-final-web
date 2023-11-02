@@ -9,10 +9,16 @@
             font-size: 2.2rem;
             text-align: center;
         }
+        hr{
+            margin: 0;
+        }
         p{
             margin: 0px;
             text-align: center;
-            width: 80%;
+            width: 100%;
+        }
+        button{
+            margin: 0;
         }
     }
     iframe{
@@ -42,6 +48,32 @@
     .logo-footer{
         img{
             width: 50px;
+        }
+    }
+
+    .banner-contacto{
+        div{
+            h1{
+                font-size: 36px;
+            }
+        }
+    }
+
+    .ubicacion{
+        h3{
+            font-size: 32px;
+        }
+
+    }
+
+    .card-contacto-container a{
+        width: 250px;
+        .material-icons{
+            font-size: 2.5rem;
+            justify-self: flex-start;
+        }
+        ul{
+            font-size: 1rem;
         }
     }
 }

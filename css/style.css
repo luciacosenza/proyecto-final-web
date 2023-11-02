@@ -26,28 +26,30 @@ p {
   font-size: 1.25rem;
   font-weight: 300; }
 
-.navbar-expand-md .navbar-brand img {
+.navbar-brand img {
   width: 80px; }
 
-.navbar-expand-md .navbar-nav {
+.navbar-nav {
   gap: 30px;
   padding-right: 20px; }
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-    color: #e6e5e2;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 0;
-    transition: 0.5s; }
-    .navbar-expand-md .navbar-nav .nav-link:hover {
-      transform: scale(1.1);
-      color: #01739c; }
-  .navbar-expand-md .navbar-nav .pagina-actual {
-    border-bottom: 1.5px solid #e6e5e2; }
-    .navbar-expand-md .navbar-nav .pagina-actual:hover {
-      border-bottom: 1.5px solid #01739c; }
+
+.nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  color: #e6e5e2;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+  transition: 0.5s; }
+  .nav-link:hover {
+    transform: scale(1.1);
+    color: #01739c; }
+
+.pagina-actual {
+  border-bottom: 1.5px solid #e6e5e2; }
+  .pagina-actual:hover {
+    border-bottom: 1.5px solid #01739c; }
 
 #banner-inicio {
   width: 100%;
@@ -487,7 +489,7 @@ p {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 700px; }
+  height: 900px; }
   .banner-asociarse div {
     width: 90%;
     height: 90%; }
@@ -626,7 +628,7 @@ input[type="file"]::file-selector-button {
   top: 20%;
   left: 55%;
   background-color: #E6E5E2;
-  width: 35%;
+  width: 40%;
   height: 600px;
   border-radius: 2%;
   box-shadow: 3px 0 70px gray; }
@@ -712,7 +714,8 @@ input[type="file"]::file-selector-button {
 
 .redes-sociales {
   color: #e6e5e2;
-  height: 500px; }
+  height: 500px;
+  padding-top: 50px; }
   .redes-sociales h2 {
     padding: 5% 10% 5% 10%;
     font-family: 'Inter';
@@ -757,7 +760,8 @@ footer {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 10px; }
+    gap: 10px;
+    margin: 0; }
     footer ul li a img {
       width: 30px; }
 
@@ -781,10 +785,14 @@ footer {
       .quienes-somos div h2 {
         font-size: 2.2rem;
         text-align: center; }
+      .quienes-somos div hr {
+        margin: 0; }
       .quienes-somos div p {
         margin: 0px;
         text-align: center;
-        width: 80%; }
+        width: 100%; }
+      .quienes-somos div button {
+        margin: 0; }
     .quienes-somos iframe {
       width: 90%; }
   .nuestros-servicios h2 {
@@ -796,4 +804,140 @@ footer {
     .nuestros-servicios .servicios .card .card-body .card-text {
       font-size: 16px; }
   .logo-footer img {
-    width: 50px; } }
+    width: 50px; }
+  .banner-contacto div h1 {
+    font-size: 36px; }
+  .ubicacion h3 {
+    font-size: 32px; }
+  .card-contacto-container a {
+    width: 250px; }
+    .card-contacto-container a .material-icons {
+      font-size: 2.5rem;
+      justify-self: flex-start; }
+    .card-contacto-container a ul {
+      font-size: 1rem; } }
+
+@media (max-width: 768px) {
+  .titulo-banner {
+    padding: 10px; }
+    .titulo-banner h1 {
+      font-size: 3.5rem; }
+    .titulo-banner p {
+      font-size: 1.5rem; }
+    .titulo-banner button {
+      margin-top: 50px; }
+  footer a img {
+    width: 70px; }
+  footer span {
+    font-size: 0.75rem; }
+  .nuestros-servicios .servicios {
+    flex-direction: column; }
+    .nuestros-servicios .servicios .card {
+      width: 100%;
+      height: fit-content; }
+      .nuestros-servicios .servicios .card .card-body {
+        text-align: center; }
+  .nuestros-servicios hr {
+    width: 300px; }
+  .nav-link:hover {
+    transform: none; }
+  .pagina-actual {
+    border-bottom: none; }
+    .pagina-actual:hover {
+      border-bottom: none; }
+  .banner-sgr {
+    height: 400px; }
+    .banner-sgr h1 {
+      font-size: 2rem; }
+      .banner-sgr h1 span {
+        font-size: 2.2rem; }
+    .banner-sgr p {
+      font-size: 1rem;
+      line-height: 20px;
+      text-align: left; }
+  .requisitos div {
+    padding: 5% 3% 5% 3%; }
+    .requisitos div h2 {
+      font-size: 1.75rem; }
+      .requisitos div h2 span {
+        font-size: 1.9rem; }
+    .requisitos div ul {
+      font-size: 16px; }
+  .requisitos img {
+    width: 50%; }
+  #como-asociarse h2 {
+    font-size: 1.8rem; }
+  #como-asociarse .container-info .info {
+    height: fit-content; }
+  .banner-empresa {
+    height: 200px;
+    justify-content: center;
+    text-align: center; }
+    .banner-empresa h1 {
+      font-size: 3rem;
+      padding: 0; }
+  .mision-vision div h3 {
+    font-size: 2rem; }
+    .mision-vision div h3 span {
+      font-size: 2.2rem; }
+  .mision-vision div p {
+    font-size: 1rem; }
+  .historia div h3 {
+    font-size: 2rem; }
+  .historia div p {
+    font-size: 1rem; }
+  .equipo .miembros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "miembro1 miembro2" "miembro3 miembro4" "miembro5 miembro6"; }
+    .equipo .miembros div h4 {
+      font-size: 1.25rem; }
+  .equipo h2 {
+    font-size: 2rem; }
+    .equipo h2 span {
+      font-size: 2.2rem; } }
+
+@media (max-width: 425px) {
+  p {
+    font-size: 1rem; }
+  .titulo-banner {
+    text-align: center; }
+    .titulo-banner h1 {
+      font-size: 2.5rem;
+      padding: 0; }
+    .titulo-banner p {
+      font-size: 1.125rem;
+      padding: 0; }
+    .titulo-banner button {
+      width: 9.375rem;
+      height: 70px;
+      margin-top: 7.5rem; }
+  .quienes-somos div h2 {
+    font-size: 1.5rem; }
+  .nuestros-servicios hr {
+    width: 200px; }
+  .banner-sgr {
+    flex-direction: column; }
+    .banner-sgr h1 {
+      text-align: center;
+      width: 100%; }
+    .banner-sgr p {
+      text-align: center;
+      width: 100%; }
+  .requisitos {
+    flex-direction: column;
+    height: 600px;
+    text-align: center; }
+    .requisitos div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      overflow: hidden; }
+      .requisitos div hr {
+        margin: 0; }
+    .requisitos img {
+      width: 100%;
+      height: 300px; }
+  footer ul li a img {
+    width: 25px; } }

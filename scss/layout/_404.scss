@@ -1,0 +1,44 @@
+.pagina-error{
+    @include flexbox(row-reverse, wrap, center, center, 20px);
+    background-color: $color;
+    height: 90vh;
+    width: 100%;
+    img{
+        width: 40%;
+    }
+    div{
+        width: 50%;
+        @include flexbox(column, wrap, center, center, 10px);
+        h1{
+            @include subtitulo;
+            color: $color-resaltado;
+            font-size: 20vw;
+        }
+        p{
+            color: $color-resaltado;
+            font-size: 3vw;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            font-family: 'Inter', sans-serif;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 1px 1px 10px grey;
+            transition: 1s;
+            a{
+                text-decoration: none;
+                color: $color-resaltado;
+            }
+            &:hover{
+                transform: scale(1.03);
+                cursor: pointer;
+                background-color: $color-resaltado;
+                a{
+                    color: $color;
+                }
+            }
+        }
+    }
+            
+    }

@@ -790,6 +790,53 @@ footer {
     footer ul li a img {
       width: 30px; }
 
+.pagina-error {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #e6e5e2;
+  height: 90vh;
+  width: 100%; }
+  .pagina-error img {
+    width: 40%; }
+  .pagina-error div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+    .pagina-error div h1 {
+      font-family: 'Inter';
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #01739c;
+      font-size: 20vw; }
+    .pagina-error div p {
+      color: #01739c;
+      font-size: 3vw; }
+    .pagina-error div button {
+      width: 150px;
+      height: 50px;
+      font-family: 'Inter', sans-serif;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 1px 1px 10px grey;
+      transition: 1s; }
+      .pagina-error div button a {
+        text-decoration: none;
+        color: #01739c; }
+      .pagina-error div button:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+        background-color: #01739c; }
+        .pagina-error div button:hover a {
+          color: #e6e5e2; }
+
 @media (max-width: 1024px) {
   .quienes-somos {
     width: 100%;
@@ -992,7 +1039,20 @@ footer {
         font-size: 2.5rem; }
   .container-redes {
     flex-direction: column;
-    gap: 40px; } }
+    gap: 40px; }
+  .pagina-error {
+    width: 100%;
+    flex-direction: column; }
+    .pagina-error div {
+      width: 100%; }
+      .pagina-error div h1 {
+        font-size: 20vw; }
+      .pagina-error div p {
+        font-size: 24px; }
+      .pagina-error div button {
+        width: 120px; }
+    .pagina-error img {
+      width: 50%; } }
 
 @media (max-width: 425px) {
   p {
@@ -1076,5 +1136,9 @@ footer {
       font-size: 2rem; }
   .container-redes div a img {
     width: 100px; }
+  .pagina-error div h1 {
+    font-size: 90px; }
+  .pagina-error div p {
+    font-size: 20px; }
   footer ul li a img {
     width: 25px; } }
